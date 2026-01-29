@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos | LogiChain #</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="container nav-wrapper">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-icon"><i data-lucide="layers"></i></span>
+                    <span class="logo-text">LogiChain <span>#</span></span>
+                </a>
+            </div>
+            <ul class="nav-links desktop-only">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html" class="active">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="cases.html">Cas d'usage</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="header-right">
+                <div class="lang-selector">
+                    <button class="lang-btn active" data-lang="fr" onclick="triggerGoogleTranslate('fr')">FR</button>
+                    <button class="lang-btn" data-lang="en" onclick="triggerGoogleTranslate('en')">EN</button>
+                    <button class="lang-btn" data-lang="es" onclick="triggerGoogleTranslate('es')">ES</button>
+                </div>
+                <div class="nav-cta desktop-only"><a href="contact.html" class="btn btn-primary">Diagnostic</a></div>
+                <button class="menu-toggle" aria-label="Menu"><i data-lucide="menu"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+    <aside class="mobile-sidebar glass" id="mobile-sidebar" aria-hidden="true">
+        <div class="sidebar-header">
+            <div class="logo"><span class="logo-text">LogiChain <span>#</span></span></div>
+            <button class="sidebar-close"><i data-lucide="x"></i></button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul class="sidebar-links">
+                <li style="--i:1"><a href="index.html">Accueil</a></li>
+                <li style="--i:2"><a href="about.html">À propos</a></li>
+                <li style="--i:3"><a href="services.html">Services</a></li>
+                <li style="--i:4"><a href="cases.html">Cas d'usage</a></li>
+                <li style="--i:5"><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="sidebar-footer" style="--i:6">
+                <a href="contact.html" class="btn btn-primary" style="width: 100%;">Diagnostic Gratuit</a>
+            </div>
+        </nav>
+    </aside>
+
+    <div id="google_translate_element" style="display:none;"></div>
+
+    <main>
+        <section class="hero-small">
+            <div class="container">
+                <div class="badge"><i data-lucide="info"></i> Notre Identité</div>
+                <h1>Innovation & <span class="gradient-text">Expertise</span></h1>
+                <p>LogiChain est le partenaire de confiance pour la transformation digitale de votre Supply Chain.</p>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="badge">Notre Vision</div>
+                        <h2 class="section-title">Une vision claire pour <br><span class="gradient-text">un futur
+                                complexe</span></h2>
+                        <p>LogiChain est né de la conviction que la technologie peut radicalement transformer la
+                            logistique mondiale. Forts de plus de 15 ans d'expertise dans le conseil et la data science,
+                            nos
+                            experts accompagnent les entreprises dans leur transition vers l'industrie 4.0.</p>
+                        <div style="margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                            <div>
+                                <h4 style="color: #fff; margin-bottom: 10px;">Agilité</h4>
+                                <p style="font-size: 0.9rem;">Répondre aux fluctuations du marché en temps réel.</p>
+                            </div>
+                            <div>
+                                <h4 style="color: #fff; margin-bottom: 10px;">Précision</h4>
+                                <p style="font-size: 0.9rem;">Données fiables pour une prise de décision éclairée.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1454165833767-027ffae7041e?auto=format&fit=crop&w=800&q=80"
+                        alt="Expertise" class="about-img">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo"><span class="logo-text">LogiChain <span>#</span></span></div>
+                <p>Expertise paneuropéenne en ingénierie logistique et intelligence artificielle. ######## | Berlin |
+                    ########.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i data-lucide="linkedin"></i></a>
+                    <a href="#" class="social-icon"><i data-lucide="twitter"></i></a>
+                    <a href="#" class="social-icon"><i data-lucide="globe"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="services.html">Transport Flow</a></li>
+                    <li><a href="services.html">AI Planning</a></li>
+                    <li><a href="services.html">Analytics Hub</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Insights</h4>
+                <ul>
+                    <li><a href="about.html">Notre Vision</a></li>
+                    <li><a href="cases.html">Études de Cas</a></li>
+                    <li><a href="contact.html">Nous Contacter</a></li>
+                </ul>
+            </div>
+            <div class="newsletter-box">
+                <h4>Newsletter Global</h4>
+                <p style="margin-bottom: 20px; font-size: 0.9rem;">Recevez nos analyses trimestrielles sur la Supply
+                    Chain 4.0.</p>
+                <form class="newsletter-form" onsubmit="return false;">
+                    <input type="email" placeholder="votre@email.com">
+                    <button class="btn-newsletter"><i data-lucide="send"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2026 LogiChain #. Tous droits réservés.</p>
+            <div class="legal-links">
+                <a href="#">Confidentialité</a>
+                <a href="#">Mentions Légales</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'fr', includedLanguages: 'fr,en,es', autoDisplay: false }, 'google_translate_element');
+        }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>
